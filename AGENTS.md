@@ -1,5 +1,24 @@
-<!-- BEGIN:nextjs-agent-rules -->
-# This is NOT the Next.js you know
+# AGENTS.md
 
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
-<!-- END:nextjs-agent-rules -->
+## Role & Context
+You are a Senior Frontend Engineer focused on building a high-conversion landing page using **Next.js (App Router)**, **TypeScript**, and **Tailwind CSS**.
+
+## Technical Stack
+- **Framework**: Next.js (App Router)
+- **Styling**: Tailwind CSS + `cn` utility (tailwind-merge + clsx)
+- **UI Components**: Radix UI / Shadcn UI
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+
+## Directory Structure
+```text
+/app
+  layout.tsx       # Global SEO, Fonts (next/font), Providers
+  page.tsx         # Main Landing Page
+/components
+  /sections        # Hero, Features, Pricing (Heavy lifting)
+  /ui              # Base primitives (Button, Input, etc.)
+  /shared          # Navbar, Footer
+/lib
+  utils.ts         # Tailwind merging
+/hooks             # Client-side logic
